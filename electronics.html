@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Gadgets</title>
+    <script language="JavaScript">
+    function alertTV(){
+        size=document.tvform.tvsize.value;
+        alert("You want to order a television of size = "+size);
+    }
+    function alertRef(){
+        size=document.refform.refcapacity.value;
+        alert("You want to order a Refigrator of capacity = "+size);
+    }
+    function alertWashing(){
+        size=document.washform.washcapacity.value;
+        alert("You want to order a Washing Machine of capacity = "+size);
+    }
+    </script>
+</head>
+<body>
+    <form name="tvform">
+        <h2>Television Order</h2>
+        Type the screen size
+        <input type="text" name="tvsize">  
+        <input type="button" value = " OK " onclick="alertTV()";>
+    </form>
+    <hr>
+    <br>
+    <form name="washform">
+        <h2>Washing Machine Order</h2>-
+        Type the capacity
+        <input type="text" name="washcapacity">
+        <input type="button" value = " OK " onclick="alertWashing()";>
+    </form>
+    <hr>
+    <br>
+    <form name="refform">
+        <h2>Refrigerator Order</h2>
+        Type the capacity
+        <input type="text" name="refcapacity">
+        <br>
+        select open or closed back
+        <select name="reftype">
+            <option> open back </option>
+            <option> closed back </option>
+        </select>
+        <input type="button" value = " OK " onclick="alertRef()";>
+    </form>
+</body>
+</html>
